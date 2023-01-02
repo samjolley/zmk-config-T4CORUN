@@ -75,7 +75,7 @@
                 *   +------+------+------+------+------|    +------+------+------+------+------+
                 *   |   Z  |   X  |   C  |   D  |   V  |    |   K  |   H  |   ,  |   .  |   /  |
                 *   `------+------+------+------+------+    +------+------+------+------+------'
-                *                 |      |NUMBSP| Shft |    | Spc  |NAVTAB| mute |
+                *                 |plypau|NUMBSP| Shft |    | Spc  |NAVTAB| mute |
                 *                 `------+------+------'    `------+------+------'
                 *
                 *   Encoder Left: Up <-> Down
@@ -103,7 +103,7 @@
                 *   +------+------+------+------+------|    +------+------+------+------+------+
                 *   | Undo | Cut  | Copy | Pste | Redo |    |   -  |   1  |   2  |   3  |   \  |
                 *   `------+------+------+------+------+    +------+------+------+------+------'
-                *                 |      |LyrTap|      |    | Spc  |   0  | mute |
+                *                 |      |LyrTap|      |    | Spc  |   0  |      |
                 *                 `------+------+------'    `------+------+------'
                 *
                 *   Encoder Left: x <-> x
@@ -114,7 +114,7 @@
                                 &kp ESC         _____x_____     _____x_____     &kp TILDE       &kp GRAVE       &TD_LBKT        &kp N7          &kp N8          &kp N9          &TD_RBKT
                                 &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHFT       &kp DOT         &kp SEMI        &kp N4          &kp N5          &kp N6          &kp EQUAL
                                 S_UNDO          S_CUT           S_COPY          S_PASTE         S_REDO          &kp MINUS       &kp N1          &kp N2          &kp N3          &kp BSLH
-                                                                _____x_____     ___________     _____x_____     &kp SPACE       &kp N0          &kp C_MUTE
+                                                                _____x_____     ___________     _____x_____     &kp SPACE       &kp N0          _____x_____
                         >;
 
                         sensor-bindings = <&inc_dec_kp &none &none &inc_dec_kp DEL BSPC>;
@@ -159,7 +159,7 @@
                 *   +------+------+------+------+------|    +------+------+------+------+------+
                 *   |LyrTap|      |      |      |      |    |PauBrk|  F1  |  F2  |  F3  | F10  |
                 *   `------+------+------+------+------+    +------+------+------+------+------'
-                *                 |PlyPau|      |      |    |      |      | mute |
+                *                 |      |      |      |    | Vol- | Vol+ | mute |
                 *                 `------+------+------'    `------+------+------'
                 *
                 *   Encoder Left: previous song <-> next song
@@ -170,7 +170,7 @@
                                 &kp ESC         _____x_____     &wrap_dqt       &wrap_sqt       _____x_____     &kp PSCRN       &kp F7          &kp F8          &kp F9          &kp F12
                                 &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHFT       _____x_____     &kp SLCK        &kp F4          &kp F5          &kp F6          &kp F11
                                 ___________     _____x_____     _____x_____     _____x_____     _____x_____     &kp PAUSE_BREAK &kp F1          &kp F2          &kp F3          &kp F10
-                                                                &kp C_PP        _____x_____     _____x_____     _____x_____     _____x_____     &kp C_MUTE
+                                                                _____x_____     _____x_____     _____x_____     &kp C_VOL_UP    &kp C_VOL_DN    &kp C_MUTE
                         >;
 
                         sensor-bindings = <&inc_dec_kp C_NEXT C_PREV &inc_dec_kp C_VOL_UP C_VOL_DN>;
