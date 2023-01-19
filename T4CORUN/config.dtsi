@@ -69,6 +69,11 @@
 #define MOU_L	&mmv MOVE_HOR(-3000)
 #define MOU_R	&mmv MOVE_HOR(3000)
 
+#define MOUW_U	&mwh SCROLL_VERT(30)
+#define MOUW_D	&mwh SCROLL_VERT(-30)
+#define MOUW_L	&mwh SCROLL_HOR(30)
+#define MOUW_R	&mwh SCROLL_HOR(-30)
+
 //Behavior Configuration
 #define TAPPING_TERM 200
 #define TAPPING_TERM_GUIALT 230

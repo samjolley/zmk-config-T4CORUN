@@ -55,7 +55,7 @@
                                                                 &kp C_PP        NUM_BSP         &kp LSHFT       MOU_SPC         NAV_TAB         &kp C_MUTE
                         >;
 
-                        sensor-bindings = <&inc_dec_mwh SCROLL_DOWN SCROLL_UP &inc_dec_mwh SCROLL_RIGHT SCROLL_LEFT>;
+                        sensor-bindings = <&inc_dec_mwh SCROLL_VERT(-30) SCROLL_VERT(30) &inc_dec_mwh SCROLL_HOR(-30) SCROLL_HOR(30)>;
                 };
 
                 colemakdh_layer {
@@ -199,10 +199,10 @@
                         label = "Mouse";
 
                         bindings = <
-                                &kp ESC         &mkp MB4        MOU_U           &mkp MB5        &mwh SCROLL_UP   &kp INS         _____x_____     _____x_____     _____x_____     _____x_____
-                                _____x_____     MOU_L           MOU_D           MOU_R           &mwh SCROLL_DOWN &kp DEL         &kp RSHFT       &kp RCTRL       &kp RALT        &kp RGUI
-                                S_UNDO          S_CUT           S_COPY          S_PASTE         S_REDO           _____x_____     &kp SPACE       &kp TAB         _____x_____     &kp K_APP
-                                                                &mkp MCLK       &mkp RCLK       &mkp LCLK        ___________     _____x_____     _____x_____
+                                &kp ESC         &mkp MB4        MOU_U           &mkp MB5        MOUW_U          &kp INS         _____x_____     _____x_____     _____x_____     _____x_____
+                                _____x_____     MOU_L           MOU_D           MOU_R           MOUW_D          &kp DEL         &kp RSHFT       &kp RCTRL       &kp RALT        &kp RGUI
+                                S_UNDO          S_CUT           S_COPY          S_PASTE         S_REDO          _____x_____     &kp SPACE       &kp TAB         _____x_____     &kp K_APP
+                                                                &mkp MCLK       &mkp RCLK       &mkp LCLK       ___________     _____x_____     _____x_____
                             >;
 
                         sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB)) &inc_dec_kp &none &none>;
