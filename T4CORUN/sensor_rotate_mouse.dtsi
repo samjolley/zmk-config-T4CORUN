@@ -7,5 +7,19 @@
 			#sensor-binding-cells = <2>;
          	bindings = <&mwh>, <&mwh>;
 		};
+
+		enc: enc {
+		    compatible = "zmk,behavior-sensor-rotate";
+		    label = "ENCODER";
+		    #sensor-binding-cells = <0>;
+		    bindings = <&mwh SCROLL_DOWN &mwh SCROLL_UP>;
+		};
+
+		enc2: en, {
+		    compatible = "zmk,behavior-sensor-rotate";
+		    label = "ENCODER";
+		    #sensor-binding-cells = <0>;
+		    bindings = <&mwh SCROLL_RIGHT &mwh SCROLL_LEFT>;
+		};
 	};
 };
