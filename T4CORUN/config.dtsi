@@ -4,13 +4,15 @@
 #define NUMBER  2
 #define NAVI    3
 #define FUNC    4
-#define ADJUST  5
+#define MOUSE	5
+#define ADJUST  6
 
 //Basic Key Aliases
 #define ___________     &trans
 #define _____x_____     &none
 
 //Layer Taps
+#define MOU_SPC &lt     MOUSE   SPACE
 #define NAV_TAB &lt     NAVI    TAB
 #define NUM_BSP &lt     NUMBER  BSPC
 #define FUN_Z   &lt		FUNC    Z

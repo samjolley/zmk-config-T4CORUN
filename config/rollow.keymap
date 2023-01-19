@@ -60,10 +60,10 @@
                                 &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P
                                 LGUI_A          LALT_S          LCTRL_D         LSHFT_F         &kp G           &kp H           RSHFT_J         RCTRL_K         RALT_L          RGUI_QT
                                 FUN_Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp COMMA       &kp DOT         AD_FSLH
-                                                                &kp C_PP        NUM_BSP         &kp LSHFT       &kp SPACE       NAV_TAB         &kp C_MUTE
+                                                                &kp C_PP        NUM_BSP         &kp LSHFT       MOU_SPC         NAV_TAB         &kp C_MUTE
                         >;
 
-                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
+                        sensor-bindings = <&inc_dec_kp SCROLL_DOWN SCROLL_UP &inc_dec_kp SCROLL_RIGHT SCROLL_LEFT>;
                 };
 
                 colemakdh_layer {
@@ -144,7 +144,7 @@
                 *   Encoder Right: x <-> x
                 */
 
-                        label = "Navigation";
+                        label = "Nav";
 
                         bindings = <
                                 &kp ESC         &kp HOME        &kp UP          &kp END         &kp PG_UP       &kp INS         _____x_____     _____x_____     _____x_____     _____x_____
@@ -184,6 +184,36 @@
                         >;
 
                         sensor-bindings = <&inc_dec_kp C_NEXT C_PREV &inc_dec_kp C_VOL_UP C_VOL_DN>;
+                };
+
+                mou_layer {
+
+                /*
+                *
+                *   ,----------------------------------.    ,----------------------------------.
+                *   | Esc  | back | MouU | fwd  |WheelU|    | Ins  |      |      |      |      |
+                *   +------+------+------+------+------|    +------+------+------+------+------+
+                *   |      | MouL | MouD | MouR |WheelD|    | Del  | Shft | Ctrl | Alt  | GUI  |
+                *   +------+------+------+------+------|    +------+------+------+------+------+
+                *   | Undo | Cut  | Copy | Pste | Redo |    |      | Spc  | Tab  |      | App  |
+                *   `------+------+------+------+------+    +------+------+------+------+------'
+                *                 | MMB  | RMB  | LMB  |    |LyrTap|      |      |
+                *                 `------+------+------'    `------+------+------'
+                *
+                *   Encoder Left: Previous Browser Tab <-> Next Browser Tab
+                *   Encoder Right: x <-> x
+                */
+
+                        label = "Mouse";
+
+                        bindings = <
+                                &kp ESC         &kp MBF         &kp MOVE_UP     &kp MB5         &kp SCROLL_UP   &kp INS         _____x_____     _____x_____     _____x_____     _____x_____
+                                _____x_____     &kp MOVE_LEFT   &kp MOVE_DOWN   &kp MOVE_RIGHT  &kp SCROLL_DOWN &kp DEL         &kp RSHFT       &kp RCTRL       &kp RALT        &kp RGUI
+                                S_UNDO          S_CUT           S_COPY          S_PASTE         S_REDO          _____x_____     &kp SPACE       &kp TAB         _____x_____     &kp K_APP
+                                                                &kp MCLK        &kp RCLK        &kp LCLK        ___________     _____x_____     _____x_____
+                            >;
+
+                        sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB)) &inc_dec_kp &none &none>;
                 };
 
                 adjust_layer {
