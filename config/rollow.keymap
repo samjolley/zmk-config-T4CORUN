@@ -209,7 +209,7 @@
                         label = "Mouse";
 
                         bindings = <
-                                &kp ESC         &mkp MB4        &mmv MOVE_UP    &mkp MB5        &mwh SCROLL_UP   &kp INS         _____x_____     _____x_____     _____x_____     _____x_____
+                                &kp ESC         &mkp MB4        &mmv MOVE_VERT(-600)    &mkp MB5        &mwh SCROLL_UP   &kp INS         _____x_____     _____x_____     _____x_____     _____x_____
                                 _____x_____     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &mwh SCROLL_DOWN &kp DEL         &kp RSHFT       &kp RCTRL       &kp RALT        &kp RGUI
                                 S_UNDO          S_CUT           S_COPY          S_PASTE         S_REDO           _____x_____     &kp SPACE       &kp TAB         _____x_____     &kp K_APP
                                                                 &mkp MCLK       &mkp RCLK       &mkp LCLK        ___________     _____x_____     _____x_____
