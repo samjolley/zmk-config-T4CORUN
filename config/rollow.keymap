@@ -30,6 +30,13 @@
 	};
 
         behaviors {
+                //THis should be added to zmk/app/dts/behaviors/sensor_rotate_key_press.dtsi to enable mouse wheel scrolling
+                inc_dec_mwh: behavior_sensor_rotate_mouse_wheel {
+			compatible = "zmk,behavior-sensor-rotate-var";
+			label = "ENC_MOUSE_WHEEL";
+			#sensor-binding-cells = <2>;
+                        bindings = <&mwh>, <&mwh>;
+		};
         };
 
 
@@ -63,8 +70,7 @@
                                                                 &kp C_PP        NUM_BSP         &kp LSHFT       MOU_SPC         NAV_TAB         &kp C_MUTE
                         >;
 
-                        //sensor-bindings = <&inc_dec_kp SCROLL_DOWN SCROLL_UP &inc_dec_kp SCROLL_RIGHT SCROLL_LEFT>;
-                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
+                        sensor-bindings = <&inc_dec_mwh SCROLL_DOWN SCROLL_UP &inc_dec_mwh SCROLL_RIGHT SCROLL_LEFT>;
                 };
 
                 colemakdh_layer {
@@ -208,10 +214,10 @@
                         label = "Mouse";
 
                         bindings = <
-                                &kp ESC         &kp MBF         &kp MOVE_UP     &kp MB5         &kp SCROLL_UP   &kp INS         _____x_____     _____x_____     _____x_____     _____x_____
-                                _____x_____     &kp MOVE_LEFT   &kp MOVE_DOWN   &kp MOVE_RIGHT  &kp SCROLL_DOWN &kp DEL         &kp RSHFT       &kp RCTRL       &kp RALT        &kp RGUI
-                                S_UNDO          S_CUT           S_COPY          S_PASTE         S_REDO          _____x_____     &kp SPACE       &kp TAB         _____x_____     &kp K_APP
-                                                                &kp MCLK        &kp RCLK        &kp LCLK        ___________     _____x_____     _____x_____
+                                &kp ESC         &mkp MBF        &mmv MOVE_UP    &mkp MB5        &mwh SCROLL_UP   &kp INS         _____x_____     _____x_____     _____x_____     _____x_____
+                                _____x_____     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &mwh SCROLL_DOWN &kp DEL         &kp RSHFT       &kp RCTRL       &kp RALT        &kp RGUI
+                                S_UNDO          S_CUT           S_COPY          S_PASTE         S_REDO           _____x_____     &kp SPACE       &kp TAB         _____x_____     &kp K_APP
+                                                                &mkp MCLK       &mkp RCLK       &mkp LCLK        ___________     _____x_____     _____x_____
                             >;
 
                         sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB)) &inc_dec_kp &none &none>;
