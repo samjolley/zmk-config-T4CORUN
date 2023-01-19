@@ -4,12 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include <behaviors.dtsi>
-
 #include "../T4CORUN/t4corun.dtsi"
-#include "../T4CORUN/macros.dtsi"
-#include "../T4CORUN/mouse.dtsi"
-#include "../T4CORUN/tapdances.dtsi"
 
 / {
         chosen {
