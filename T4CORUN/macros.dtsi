@@ -1,4 +1,5 @@
 / {
+    //Add another macro to wrap in parenthesis
     macros {
         zed_em_kay: zed_em_kay {
             label = "ZM_zed_em_kay";
@@ -28,6 +29,16 @@
             bindings
                 = <&kp LC(LEFT) &kp LS(SQT)>
 				, <&kp LC(RIGHT) &kp LS(SQT)>
+                ;
+        };
+
+        wrap_par: wrap_parenthesis {
+            label = "WRAP_PARENTHESIS";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LC(LEFT) &kp LS(N9)>
+				, <&kp LC(RIGHT) &kp LS(N0)>
                 ;
         };
     };

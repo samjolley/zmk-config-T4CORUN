@@ -1,5 +1,3 @@
-#include <dt-bindings/zmk/mouse.h>
-
 // Layer Definitions out toggle
 #define QWERTY  0
 #define COLEMAK 1
@@ -94,6 +92,6 @@
 
 &mwh {
     delay-ms = <0>;
-    acceleration-exponent=<1>;
+    acceleration-exponent=<2>;
     time-to-max-speed-ms = <0>;
 };
