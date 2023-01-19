@@ -1,3 +1,5 @@
+#include <dt-bindings/zmk/mouse.h>
+
 // Layer Definitions out toggle
 #define QWERTY  0
 #define COLEMAK 1
