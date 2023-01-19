@@ -63,40 +63,9 @@
 #define BT3     &bt BT_SEL 3
 #define BT4     &bt BT_SEL 4
 
-//mouse tuning
-#define MOU_U	&mmv MOVE_VERT(-3000)
-#define MOU_D	&mmv MOVE_VERT(3000)
-#define MOU_L	&mmv MOVE_HOR(-3000)
-#define MOU_R	&mmv MOVE_HOR(3000)
-
-#define MOUW_U	&mwh SCROLL_VERT(50)
-#define MOUW_D	&mwh SCROLL_VERT(-50)
-#define MOUW_L	&mwh SCROLL_HOR(50)
-#define MOUW_R	&mwh SCROLL_HOR(-50)
-
 //Behavior Configuration
+#define QUICK_TAP_TERM 125
 #define TAPPING_TERM 200
 #define TAPPING_TERM_GUIALT 230
 #define TAPPING_TERM_PINKY 250
 
-&lt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <TAPPING_TERM>;
-};
-
-&mt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <TAPPING_TERM>;
-};
-
-&mmv {
-    delay-ms = <0>;
-    acceleration-exponent=<1>;
-    time-to-max-speed-ms = <500>;
-};
-
-&mwh {
-    delay-ms = <0>;
-    acceleration-exponent=<1>;
-    time-to-max-speed-ms = <0>;
-};

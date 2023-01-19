@@ -14,17 +14,23 @@ This passion is represented in the small details like…
 - Gasket-like sound dampening layer to minimize unwanted rattles and noise.
 ```
 
-## My Notes:
+## Setup
 
-- This is my first time using ZMK and Github Actions. Please bear with me
+- This is my first time using ZMK and Github Actions. My aim is to port my QMK layout to ZMK. Please bear with me
 - My keymap is heavily inspired by Manna Harbor Miryoku. I flipped some things around and made some operations doable with the left side so I can keep using the mouse
-
-- ZMK does not officially define the Rollow Shield and does not support Peripheral Side Encoder as of 2023-01-18
-  - Uses [GitHub - nickconway/zmk: ZMK Firmware Repository](https://github.com/nickconway/zmk) dev branch to enable peripheral side encoder and mouse support
+- ZMK Official does not define the Rollow Shield or support Peripheral Side Encoder as of 2023-01-18
+  - Uses [GitHub - nickconway/zmk: ZMK Firmware Repository](https://github.com/nickconway/zmk) dev branch for peripheral side encoder and mouse support
   - Leveraged [tutuuXY](https://github.com/TutuuXY/zmk-config)'s repo to get shield definition
-  - My [Issues](https://github.com/T4CORUN/zmk-config/issues)
+
+## Personal Additions
+
+- Created ability for user to choose 5 column or 6 column layout. This way you do not have to put `&none` on the outer columns on a 3x5 layout
+- Created encoder support for mouse movement/scrolling emulation. Out of the box ZMK only supports `&kp` for encoders
+- Allows switching between QWERTY and COLEMAKDH for base layer
 
 ## Todo
 
-- [ ] Figure out why the scroll wheel doesn't work on the encoder. I think it's because there is a delay in when the scroll wheel activates.
-- [ ] Try scroll speed 50 to see if that improves things
+[Issue Tracker](https://github.com/T4CORUN/zmk-config/issues)
+
+- [ ] Figure out why the scroll wheel doesn't work on the encoder. I think it's because there is a delay in when the scroll wheel activates. The new behavior does work. I was able to get mouse movement but it's not fast. Might have to try a ridiculous scroll number to even get it to work
+- [x] Try scroll speed 50 to see if that improves things

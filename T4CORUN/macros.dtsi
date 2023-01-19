@@ -1,14 +1,12 @@
 / {
-    //Add another macro to wrap in parenthesis
     macros {
-        zed_em_kay: zed_em_kay {
-            label = "ZM_zed_em_kay";
+        wrap_grv: wrap_grave {
+            label = "WRAP_GRAVE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp Z &kp M &kp K>
-                , <&macro_release &kp LSHFT>
+                = <&kp LC(LEFT) &kp GRAVE>
+				, <&kp LC(RIGHT) &kp GRAVE>
                 ;
         };
 

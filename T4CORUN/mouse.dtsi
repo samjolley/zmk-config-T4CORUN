@@ -1,3 +1,5 @@
+#include "mouse.h"
+
 / {
 	behaviors {
 		/omit-if-no-ref/ inc_dec_mwh: behavior_sensor_rotate_mouse_wheel {
@@ -14,4 +16,16 @@
          	bindings = <&mmv>, <&mmv>;
 		};
 	};
+};
+
+&mmv {
+    delay-ms = <U_MOUSE_MOVE_DELAY>;
+    acceleration-exponent = <U_MOUSE_MOVE_EXPONENT>;
+    time-to-max-speed-ms = <U_MOUSE_MOVE_TIME>;
+};
+
+&mwh {
+    delay-ms = <U_MOUSE_SCROLL_DELAY>;
+    acceleration-exponent = <U_MOUSE_SCROLL_EXPONENT>;
+    time-to-max-speed-ms = <U_MOUSE_SCROLL_TIME>;
 };
