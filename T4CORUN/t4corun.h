@@ -15,8 +15,8 @@
 #define MOU_SPC &lt     MOUSE   SPACE
 #define NAV_TAB &lt     NAVI    TAB
 #define NUM_BSP &lt     NUMBER  BSPC
-#define FUN_Z   &lt		FUNC    Z
-#define AD_FSLH &lt		ADJUST  FSLH
+#define FUN_Z   &lt_pky FUNC    Z
+#define AD_FSLH &lt_pky	ADJUST  FSLH
 
 //To Layer
 #define DEFAULT &to 	QWERTY
