@@ -14,7 +14,7 @@ This passion is represented in the small details like…
 - Gasket-like sound dampening layer to minimize unwanted rattles and noise.
 ```
 
-My Notes:
+## My Notes:
 
 - This is my first time using ZMK and Github Actions. Please bear with me
 - My keymap is heavily inspired by Manna Harbor Miryoku. I flipped some things around and made some operations doable with the left side so I can keep using the mouse
@@ -23,3 +23,8 @@ My Notes:
   - Uses [GitHub - nickconway/zmk: ZMK Firmware Repository](https://github.com/nickconway/zmk) dev branch to enable peripheral side encoder and mouse support
   - Leveraged [tutuuXY](https://github.com/TutuuXY/zmk-config)'s repo to get shield definition
   - My [Issues](https://github.com/T4CORUN/zmk-config/issues)
+
+## Todo
+
+- [ ] Figure out why the scroll wheel doesn't work on the encoder. I think it's because there is a delay in when the scroll wheel activates.
+- [ ] Try scroll speed 50 to see if that improves things

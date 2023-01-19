@@ -6,5 +6,12 @@
 			#sensor-binding-cells = <2>;
          	bindings = <&mwh>, <&mwh>;
 		};
+
+		/omit-if-no-ref/ inc_dec_mmv: behavior_sensor_rotate_mouse_movement {
+			compatible = "zmk,behavior-sensor-rotate-var";
+			label = "ENC_MOUSE_MOVEMENT";
+			#sensor-binding-cells = <2>;
+         	bindings = <&mmv>, <&mmv>;
+		};
 	};
 };
