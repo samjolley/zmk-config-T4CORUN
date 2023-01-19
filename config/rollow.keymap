@@ -64,7 +64,8 @@
                         >;
 
                         //sensor-bindings = <&inc_dec_mwh SCROLL_DOWN SCROLL_UP &inc_dec_mwh SCROLL_RIGHT SCROLL_LEFT>;
-                        sensor-bindings = <enc enc2>;
+                        //sensor-bindings = <enc enc2>;
+                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
 
                 colemakdh_layer {
