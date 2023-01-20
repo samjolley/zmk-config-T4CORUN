@@ -173,9 +173,9 @@
                 /*
                 *
                 *   ,----------------------------------.    ,----------------------------------.
-                *   | Esc  | back | MouU | fwd  |WheelU|    | Ins  |      |      |      |      |
+                *   | Esc  | back | MouU | fwd  |      |    | Ins  |      |      |      |      |
                 *   +------+------+------+------+------|    +------+------+------+------+------+
-                *   |      | MouL | MouD | MouR |WheelD|    | Del  | Shft | Ctrl | Alt  | GUI  |
+                *   |      | MouL | MouD | MouR |      |    | Del  | Shft | Ctrl | Alt  | GUI  |
                 *   +------+------+------+------+------|    +------+------+------+------+------+
                 *   | Undo | Cut  | Copy | Pste | Redo |    |      | Spc  | Tab  |      | App  |
                 *   `------+------+------+------+------+    +------+------+------+------+------'
@@ -189,13 +189,13 @@
                         label = "Mouse";
 
                         bindings = <
-                                &kp ESC         &mkp MB4        MOU_U           &mkp MB5        MWH_U           &kp INS         _____x_____     _____x_____     _____x_____     _____x_____
-                                _____x_____     MOU_L           MOU_D           MOU_R           MWH_D           &kp DEL         &kp RSHFT       &kp RCTRL       &kp RALT        &kp RGUI
+                                &kp ESC         &mkp MB4        MOU_U           &mkp MB5        _____x_____     &kp INS         _____x_____     _____x_____     _____x_____     _____x_____
+                                _____x_____     MOU_L           MOU_D           MOU_R           _____x_____     &kp DEL         &kp RSHFT       &kp RCTRL       &kp RALT        &kp RGUI
                                 S_UNDO          S_CUT           S_COPY          S_PASTE         S_REDO          _____x_____     &kp SPACE       &kp TAB         _____x_____     &kp K_APP
                                                                 &mkp MCLK       &mkp RCLK       &mkp LCLK       ___________     _____x_____     _____x_____
                             >;
 
-                        sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB)) &inc_dec_kp &none &none>;
+                        sensor-bindings = <&inc_dec_mwh SCROLL_DOWN SCROLL_UP &inc_dec_kp &none &none>;
                 };
 
                 adjust_layer {
