@@ -1,3 +1,5 @@
+#pragma once
+
 //GACS Home Row Mods QWERTY
 #define LGUI_A  &hm_gui LGUI    A
 #define LALT_S  &hm_alt LALT    S

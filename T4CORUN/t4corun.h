@@ -1,3 +1,5 @@
+#pragma once
+
 // Layer Definitions out toggle
 #define QWERTY  0
 #define COLEMAK 1
