@@ -31,6 +31,3 @@ This passion is represented in the small details like…
 ## Todo
 
 [Issue Tracker](https://github.com/T4CORUN/zmk-config/issues)
-
-- [ ] Figure out why the scroll wheel doesn't work on the encoder. I think it's because there is a delay in when the scroll wheel activates. The new behavior does work. I was able to get mouse movement but it's not fast. Might have to try a ridiculous scroll number to even get it to work
-- [x] Try scroll speed 50 to see if that improves things
