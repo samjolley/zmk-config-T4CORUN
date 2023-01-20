@@ -4,10 +4,10 @@
 
 //Inspired by miroyku
 
-#define U_MOUSE_MOVE_MAX 4000
+#define U_MOUSE_MOVE_MAX 3000
 #define U_MOUSE_MOVE_DELAY 0
 #define U_MOUSE_MOVE_EXPONENT 1
-#define U_MOUSE_MOVE_TIME 500
+#define U_MOUSE_MOVE_TIME 750
 
 #define U_MOUSE_SCROLL_MAX 100
 #define U_MOUSE_SCROLL_DELAY 0
