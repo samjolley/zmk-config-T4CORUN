@@ -1,13 +1,17 @@
 #pragma once
 
 // Layer Definitions out toggle
-#define QWERTY  0
-#define COLEMAK 1
-#define NUMBER  2
-#define NAVI    3
-#define FUNC    4
-#define MOUSE	5
-#define ADJUST  6
+#define HANDSDOWNGOLD  0
+#define EXTRA		   1
+#define TAP 		   2
+#define BUTTON	       3
+#define NAV            4
+#define MOUSE		   5
+#define MEDIA          6
+#define NUM            7
+#define SYM            8
+#define FUN            9
+#define EMOJI          10
 
 //Basic Key Aliases
 #define ___________     &trans
@@ -21,8 +25,8 @@
 #define AD_FSLH &lt_pky	ADJUST  FSLH
 
 //To Layer
-#define DEFAULT &to 	QWERTY
-#define COLMKDH &to	    COLEMAK
+#define DEFAULT &to 	HANDSDOWNGOLD
+#define EXTRA   &to	    EXTRA
 
 //Shortcuts
 #define S_UNDO  &kp LC(Z)
