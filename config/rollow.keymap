@@ -50,7 +50,7 @@
                 *               |Esc   |SYM   | NAV  |                              |SYM   |NAV   |Delete|
                 *               |NUM   |      |      |                              |      |      |FUN   |
                 *               `--------------------'                              `--------------------'
-                */
+                *
                 *   Encoder Left: Up <-> Down
                 *   Encoder Right: Left <-> Right
                 */
